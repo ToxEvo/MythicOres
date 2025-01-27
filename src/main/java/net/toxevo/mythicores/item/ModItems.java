@@ -10,7 +10,7 @@ public class ModItems
 {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MythicOres.MOD_ID);
 
-    //Example Item
+    // Example Item
     public static final DeferredItem<Item> TEST_ITEM = ITEMS.register("test_item",
             () -> new Item(new Item.Properties()));
 

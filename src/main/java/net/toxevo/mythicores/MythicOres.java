@@ -1,5 +1,7 @@
 package net.toxevo.mythicores;
 
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.toxevo.mythicores.item.ModItems;
 import org.slf4j.Logger;
 
@@ -53,10 +55,13 @@ public class MythicOres
 
     }
 
-    // Add the example block item to the building blocks tab
+    // Add TEST_ITEM to the Ingredients creative tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.accept(ModItems.TEST_ITEM);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
