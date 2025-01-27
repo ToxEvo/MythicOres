@@ -1,0 +1,15 @@
+package net.toxevo.mythicores.item;
+
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.toxevo.mythicores.MythicOres;
+
+public class ModItems
+{
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MythicOres.MOD_ID);
+
+    public static void register(IEventBus eventBus)
+    {
+        ITEMS.register(eventBus);
+    }
+}
