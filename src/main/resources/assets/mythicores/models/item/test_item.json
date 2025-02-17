@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
-  "textures": {
+  "textures":
+  {
     "layer0": "mythicores:item/test_item"
   }
 }

@@ -2,6 +2,7 @@ package net.toxevo.mythicores;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.toxevo.mythicores.block.ModBlocks;
 import net.toxevo.mythicores.item.ModItems;
 import org.slf4j.Logger;
 
@@ -42,6 +43,7 @@ public class MythicOres
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -61,6 +63,11 @@ public class MythicOres
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.TEST_ITEM);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+           event.accept(ModBlocks.TEST_BLOCK);
         }
     }
 

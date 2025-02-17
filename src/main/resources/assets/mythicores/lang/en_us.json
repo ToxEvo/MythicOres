@@ -1,3 +1,5 @@
 {
-  "item.mythicores.test_item": "Test Item"
+  "item.mythicores.test_item": "Test Item",
+
+  "block.mythicores.test_block": "Test Block"
 }
