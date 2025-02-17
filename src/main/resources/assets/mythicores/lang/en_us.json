@@ -1,5 +1,7 @@
 {
   "item.mythicores.test_item": "Test Item",
 
-  "block.mythicores.test_block": "Test Block"
+  "block.mythicores.test_block": "Test Block",
+
+  "creativetab.mythicores.mythicores_items": "Mythic Ores"
 }
